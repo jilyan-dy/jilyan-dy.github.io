@@ -9,11 +9,14 @@ import Contact from "../components/contact/Contact"
 
 export default function Home({ data }) {
   return (
-    <Layout>
-      <Intro/>
-      <Publications/>
-      <Education/>
-      <Contact/>
-    </Layout>
+    <main>
+      <title>Jilyan Dy</title>
+      <Layout>
+        <Intro/>
+        <Publications/>
+        <Education/>
+        <Contact/>
+      </Layout>
+    </main>
   )
 }
