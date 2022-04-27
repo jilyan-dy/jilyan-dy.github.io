@@ -1,0 +1,33 @@
+@import "../../global.scss";
+
+.publicationPreview{
+    width: 70%;
+    padding: 10px 16px;
+    margin: 5px 10px;
+    border-bottom: 1px solid #fafafa;
+
+    &:hover{
+        box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+    }
+
+    a{
+        all: unset;
+        text-decoration: none;
+        color: $publicationColor;
+        cursor: pointer;
+        
+        h2{
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+    
+        h3{
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+    
+        h5{
+            margin-bottom: 5px;
+        }
+    }
+}

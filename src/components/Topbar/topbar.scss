@@ -1,0 +1,151 @@
+@import "../../global.scss";
+
+.topbar{
+    width: 100%;
+    height: 70px;
+    background-color: $secondaryColor;
+    color: $primaryColor;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    transition: all 1s ease;
+
+    .wrapper{
+        padding: 3px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mobile{
+            margin-top: 4px;
+            padding: 3px 20px;
+        }
+
+        .left{
+            
+            .logo{
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+
+                img{
+                    width: 60px;
+                    opacity: 80%;
+                    margin-right: 10px;
+                }
+
+                .name{
+                    font-size: 40px;
+                    font-weight: 500;
+                    font-family: "Outfit";
+                    color: $primaryColor;
+
+                    @include mobile{
+                        font-size: 180%;
+                    }
+                }
+            }
+        }
+
+        .right{
+            display: flex;
+
+            a{
+                text-decoration: none;
+                color: $primaryColor;
+
+                .itemContainer{
+                    display: flex;
+                    align-items: center;
+                    margin: 0px 10px;
+
+                    .icon{
+                        font-size: 18px;
+                        margin-right: 5px;
+                    }
+
+                    span{
+                        font-size: 15px;
+                        font-weight: 200;
+                    }
+                }
+                    
+                @include tablet{
+                    display: none;
+                }
+            }
+            
+            .hamburger{
+                all: unset;
+                display: none;
+            }
+
+            @include tablet{
+                .hamburger{
+                    width: 32px;
+                    height: 27px;
+                    padding-left: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    cursor: pointer;
+                    scrollbar-width: none;
+                    &::-webkit-scrollbar{
+                        display: none;
+                    }
+                    
+                    span{
+                        width: 100%;
+                        height: 4px;
+                        background-color: $primaryColor;
+                        transform-origin: left;
+                        transition: all 1s ease;
+                    }
+                }
+            }
+        }
+    }
+    
+
+    &.active{
+        background-color: $primaryColor;
+        color: $secondaryColor;
+        .wrapper{
+            .left{
+                .logo{
+                    .name{
+                        color: $secondaryColor;
+                    }
+                }
+            }
+        }
+
+        .right{
+
+            a{
+                color: $secondaryColor;
+            }
+
+            .hamburger{
+                scrollbar-width: none;
+                &::-webkit-scrollbar{
+                    display: none;
+                }
+                span{
+                    &:first-child{
+                        background-color: $secondaryColor;
+                        transform: rotate(45deg);
+                    }
+                    &:nth-child(2){
+                        opacity: 0;
+                    }
+                    &:last-child{
+                        background-color: $secondaryColor;
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+}
