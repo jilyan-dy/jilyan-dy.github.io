@@ -7,9 +7,9 @@ export default function Home() {
           <div className="wrapper">
             <h1>Hi, I'm Jilyan!</h1>
             <div className="roles">
-              <h3>Experienced Researcher</h3>
+              <h3>Software<br></br>Engineer</h3> 
               <span></span>
-              <h3>Aspiring Software Engineer</h3> 
+              <h3>Academic<br></br>Researcher</h3>
             </div>
           </div>
       </div>

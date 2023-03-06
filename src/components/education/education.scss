@@ -1,18 +1,17 @@
 @import "../../global.scss";
 
-.education{
-    background-color: $tertiaryColor;
-    height: auto;
-    padding-top: 70px;
+.education {
+  height: auto;
+  padding-top: 70px;
 }
 
-.title{
-    font-size: 46px;
-    color: $primaryColor;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.title {
+  font-size: 46px;
+  color: $primaryColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 // img{
@@ -23,47 +22,47 @@
 //     left: 11%;
 // }
 
-h3{
-    font-size: 18px;
-    font-weight: 600;
-    padding-bottom: 10px;
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 10px;
 }
 
-h5{
-    font-size: 14px;
-    font-weight: 500;
-    padding-bottom: 0px;
-    margin: 0;
+h5 {
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 0px;
+  margin: 0;
 }
 
-.date{
-    display: block;
-    position: absolute;
-    width: 100%;
-    left: 124%;
-    top: 6px;
+.date {
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 124%;
+  top: 6px;
 }
 
-.vertical-timeline-element{
-    margin: 25px 0 !important;
+.vertical-timeline-element {
+  margin: 25px 0 !important;
 }
 
-.vertical-timeline::before{
-    height: 70% !important;
-    top: 30px !important;
+.vertical-timeline::before {
+  height: 70% !important;
+  top: 30px !important;
 }
 
 @include tablet {
-    .vertical-timeline-element{
-        margin: 10px 0 !important;
-    }
+  .vertical-timeline-element {
+    margin: 10px 0 !important;
+  }
 
-    .vertical-timeline-element-date{
-        width: 180px;
-        position: relative;
-        display: block !important;
-        float: none !important;
-        left: 3px !important;
-        padding: 10px 0 !important;
-    }
+  .vertical-timeline-element-date {
+    width: 180px;
+    position: relative;
+    display: block !important;
+    float: none !important;
+    left: 3px !important;
+    padding: 10px 0 !important;
+  }
 }
