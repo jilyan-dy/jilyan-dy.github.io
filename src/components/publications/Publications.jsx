@@ -13,8 +13,11 @@ export default function Publications() {
             topic
             title
             authors
+            publisher
             publicationDate
+            link
           }
+          html
         }
       }
     }

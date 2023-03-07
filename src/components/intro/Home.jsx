@@ -9,7 +9,7 @@ export default function Home() {
             <div className="roles">
               <h3>Software<br></br>Engineer</h3> 
               <span></span>
-              <h3>Academic<br></br>Researcher</h3>
+              <h3>Researcher</h3>
             </div>
           </div>
       </div>
