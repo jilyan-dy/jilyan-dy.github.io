@@ -41,8 +41,8 @@ export default function Publications() {
 
   return (
     <div className='publications' id="publications">
-        <h1>Publications</h1>
-        <ul>
+        <h1 className="title">Publications</h1>
+        <ul className="topics">
           {topics.map((item)=>(
             <li className={"" + (item.id===selected && "active")}>
               <button onClick={()=>setSelected(item.id)}
@@ -52,9 +52,7 @@ export default function Publications() {
             </li>
           ))}
         </ul>
-        <div className="container">
-          <PublicationsList publications={publications.filter((publication) => selected === publication.frontmatter.topic || selected === "all")} />
-        </div>
+        <PublicationsList publications={publications.filter((publication) => selected === publication.frontmatter.topic || selected === "all")} />
     </div>
   )
 }

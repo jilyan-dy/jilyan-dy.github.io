@@ -16,14 +16,13 @@ export default function Education() {
         <h1 className="title">Education</h1>
         <VerticalTimeline>
           {education.map(element => {
-            let isDLSUIcon = element.acronym === "DLSU";
             return(
             <VerticalTimelineElement
               key={element.key}
               date={element.duration}
               dateClassName="date"
-              iconStyle={isDLSUIcon ? dlsuIconStyle : ntustIconStyle}
-              icon={isDLSUIcon ? <img src={dlsuLogo} alt="DLSU" style={{width:'80%',margin: '0',position: 'absolute',top: '9%',left: '11%'}}/> : <img src={ntustLogo} alt="NTUST" style={{width:'80%',margin: '0',position: 'absolute',top: '9%',left: '11%'}}/> }
+              iconStyle={element.acronym === "DLSU" ? dlsuIconStyle : ntustIconStyle}
+              icon={element.acronym === "DLSU" ? <img src={dlsuLogo} alt="DLSU" style={{width:'80%',margin: '0',position: 'absolute',top: '9%',left: '11%'}}/> : <img src={ntustLogo} alt="NTUST" style={{width:'80%',margin: '0',position: 'absolute',top: '9%',left: '11%'}}/> }
             >
               <h3 className="vertical-timeline-element-title">
                 {element.schoolName}

@@ -18,7 +18,7 @@ export const education = [
         schoolName: "De La Salle University",
         acronym: "DLSU",
         degree: "M.S. Computer Science",
-        duration: "2019.09 - present",
+        duration: "2019.09 - 2021.01",
     },
     {
         id: 4,

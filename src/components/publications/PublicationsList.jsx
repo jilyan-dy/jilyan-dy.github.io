@@ -22,9 +22,9 @@ export default function PublicationsList({publications}) {
                     </button>
                     <div className="header">{ item.frontmatter.title }</div>
                     <div className="content">
-                        <h3>{ item.frontmatter.authors }</h3>
-                        <h5>{ item.frontmatter.publisher }</h5>
-                        <h5>{ item.frontmatter.publicationDate }</h5>
+                        <h3 className='author'>{ item.frontmatter.authors }</h3>
+                        <h5 className='details'>{ item.frontmatter.publisher }</h5>
+                        <h5 className='details'>{ item.frontmatter.publicationDate }</h5>
                         <div className="abstract" dangerouslySetInnerHTML={{ __html: item.html }} />
                         <div className="buttonContainer">
                             <a href={item.frontmatter.link} target="_blank" rel = "noopener noreferrer"> View </a>

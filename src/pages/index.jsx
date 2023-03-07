@@ -13,8 +13,8 @@ export default function Home({ data }) {
       <title>Jilyan Dy</title>
       <Layout>
         <Intro/>
-        <Publications/>
         <Education/>
+        <Publications/>
         <Contact/>
       </Layout>
     </main>

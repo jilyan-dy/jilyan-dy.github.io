@@ -7,15 +7,18 @@
   align-items: center;
   padding-top: 70px;
 
-  h1 {
+  .title {
     font-size: 46px;
     color: $primaryColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
-  ul {
+  .topics {
     margin: 10px 0;
-    padding: 0;
+    padding: 28px 0px 0px 0px;
     list-style: none;
     display: flex;
     text-align: center;
@@ -38,13 +41,5 @@
         all: unset;
       }
     }
-  }
-
-  .container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 15px;
   }
 }
