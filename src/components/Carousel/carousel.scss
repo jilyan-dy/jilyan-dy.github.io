@@ -1,0 +1,135 @@
+@import "../../global.scss";
+
+.carousel {
+  overflow: hidden;
+  width: 60%;
+  max-width: 570px;
+  padding: 40px 0px;
+
+  .view {
+    display: flex;
+    align-items: center;
+
+    .inner {
+      white-space: nowrap;
+      transition: transform 1s ease-in-out;
+    }
+  }
+
+  .indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+    .arrow {
+      all: unset;
+      cursor: pointer;
+      font-size: 30px;
+      font-weight: 400;
+      color: $tertiaryColor;
+      padding: 10px;
+
+      &:hover {
+        font-weight: 700;
+        color: rgb(156, 156, 156);
+      }
+    }
+
+    .dots {
+      border: none;
+      border-radius: 50%;
+      padding: 10px;
+      margin: 0 3px;
+      color: $tertiaryColor;
+
+      &.active {
+        background-color: rgb(156, 156, 156);
+      }
+    }
+  }
+}
+
+.carousel-item {
+  display: inline-flex;
+  justify-content: center;
+  width: 84%;
+
+  @include mobile {
+    width: 73%;
+  }
+
+  .project {
+    background-color: white;
+    border-radius: 5px;
+    width: 96%;
+    white-space: normal;
+
+    img {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    .content {
+      width: 95%;
+      padding: 15px 10px;
+
+      @include mobile {
+        max-width: 92%;
+      }
+
+      .name {
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .description {
+        font-size: 12px;
+        font-weight: 500;
+        color: rgb(113, 113, 119);
+        margin: 7px 0;
+        text-align: justify;
+        text-justify: inter-word;
+      }
+
+      .tools {
+        font-size: 12px;
+        font-weight: 500;
+        color: rgb(113, 113, 119);
+        margin: 7px 0;
+      }
+    }
+
+    .buttonContainer {
+      float: right;
+      padding-bottom: 30px;
+
+      a {
+        cursor: pointer;
+        text-decoration: none;
+        color: $primaryColor;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 8px 20px;
+        border: 2px solid $primaryColor;
+        border-radius: 10px;
+
+        &:hover {
+          font-weight: 700;
+        }
+
+        @include mobile {
+          font-size: 12px;
+          padding: 7px 10px;
+        }
+      }
+
+      @include mobile {
+        padding-right: 10px;
+      }
+    }
+  }
+}

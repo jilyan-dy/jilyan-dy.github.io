@@ -1,0 +1,31 @@
+[
+	{
+		"id": "1",
+		"image": "./images/resume_website.png",
+		"type": "project",
+		"title": "Resume Website",
+		"desc": "A static website showcasing my resume and publications in detail.",
+		"tools": "ReactJS, Gatsby, Sass, and GraphQL",
+		"link": "https://www.github.com/jilyan-dy/jilyan-dy.github.io"
+	},
+	
+	{
+		"id": "2",
+		"image": "./images/food_tracker.png",
+		"type": "project",
+		"title": "Food Tracker",
+		"desc": "A website for tracking a household’s food inventory at home.Each housemate has a separate account to track their food.",
+		"tools": "ReactJS, Typescript, Sass, Flask, and MySQL",
+		"link": "https://www.github.com/jilyan-dy/food_tracker"
+	},
+	
+	{
+		"id": "3",
+		"image": "./images/orsen.png",
+		"type": "research",
+		"title": "Oral Storytelling Entity (ORSEN)",
+		"desc": "Funded by the government of the Philippines. This project enables collaborative storytelling between chatbots and children. I built features that allowed ORSEN to learn new vocabulary from the user and use this information to create engaging interactions. My contributions improved the affect score by 13.7% and the children's overall enjoyment by 14.6%.",
+		"tools": "Python, NeuralCoref, SpaCy, and Firebase",
+		"link": "https://www.youtube.com/watch?v=SGLojiBCT_4"
+	}
+]

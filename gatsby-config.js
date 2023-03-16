@@ -13,6 +13,9 @@ module.exports = {
   plugins: [
     'gatsby-plugin-sass',
     'gatsby-transformer-remark',
+    'gatsby-transformer-json',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-anchor-links',
       options: {
@@ -23,8 +26,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'publications',
-        path: `${__dirname}/src/publications/`,
+        name: 'dataset',
+        path: "./src/data/",
       },
     },
   ],
