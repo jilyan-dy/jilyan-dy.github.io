@@ -37,14 +37,10 @@
     }
 
     .dots {
-      border: none;
-      border-radius: 50%;
-      padding: 10px;
-      margin: 0 3px;
       color: $tertiaryColor;
 
       &.active {
-        background-color: rgb(156, 156, 156);
+        color: rgb(156, 156, 156);
       }
     }
   }

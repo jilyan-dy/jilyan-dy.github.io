@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { useSwipeable } from "react-swipeable"
+import CircleIcon from "@mui/icons-material/CircleRounded"
 
 import "./carousel.scss"
 
@@ -73,12 +74,12 @@ const Carousel = ({ children }) => {
         </button>
         {React.Children.map(children, (child, index) => {
           return (
-            <button
+            <CircleIcon
               className={`${index === activeIndex ? "dots active" : "dots"}`}
               onClick={() => {
                 updateIndex(index)
               }}
-            ></button>
+            ></CircleIcon>
           )
         })}
         <button
