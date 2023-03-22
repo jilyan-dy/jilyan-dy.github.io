@@ -6,27 +6,28 @@
 
 module.exports = {
   /* Your site config here */
-  siteMetadata:{
+  siteMetadata: {
     title: "Jilyan Dy",
   },
 
   plugins: [
-    'gatsby-plugin-sass',
-    'gatsby-transformer-remark',
-    'gatsby-transformer-json',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    "gatsby-plugin-sass",
+    "gatsby-transformer-remark",
+    "gatsby-transformer-json",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-image",
     {
-      resolve: 'gatsby-plugin-anchor-links',
+      resolve: "gatsby-plugin-anchor-links",
       options: {
         duration: 2000,
-        offset: -50
-      }
+        offset: -50,
+      },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'dataset',
+        name: "dataset",
         path: "./src/data/",
       },
     },

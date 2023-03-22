@@ -4,7 +4,6 @@ import resume from "../../pdf/Jilyan-resume.pdf"
 import { AnchorLink as Link } from "gatsby-plugin-anchor-links"
 
 const Menu = ({ menuOpen, setMenuOpen }) => {
-  console.log(menuOpen)
   return (
     <div className={"menu " + (menuOpen && "active")}>
       <ul>

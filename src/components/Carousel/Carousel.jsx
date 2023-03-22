@@ -6,10 +6,11 @@ import CircleIcon from "@mui/icons-material/CircleRounded"
 import "./carousel.scss"
 
 export const CarouselItem = ({ children }) => {
+  const image = getImage(children.image)
   return (
     <div className="carousel-item">
       <div className="project">
-        <GatsbyImage image={getImage(children.image)} alt={children.title} />
+        <GatsbyImage image={image} alt={children.title} />
         <div className="content">
           <h1 className="name">{children.title}</h1>
           <h3 className="description">{children.desc}</h3>
