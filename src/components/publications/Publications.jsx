@@ -6,9 +6,8 @@ import "./publications.scss"
 export default function Publications() {
   const data = useStaticQuery(graphql`
     query PublicationList {
-      allPublicationsJson {
+      allPublicationsJson(sort: { jsonId: DESC }) {
         nodes {
-          jsonId
           topic
           title
           authors

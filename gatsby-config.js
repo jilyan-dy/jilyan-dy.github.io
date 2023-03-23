@@ -11,12 +11,12 @@ module.exports = {
   },
 
   plugins: [
-    "gatsby-plugin-sass",
-    "gatsby-transformer-remark",
-    "gatsby-transformer-json",
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp",
     "gatsby-plugin-image",
+    "gatsby-plugin-sass",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-json",
+    "gatsby-transformer-remark",
+    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {
