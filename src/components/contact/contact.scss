@@ -36,9 +36,11 @@
       transform-origin: left;
     }
 
-    span:hover::before,
-    span:focus::before {
-      transform: scaleX(1);
+    @media (hover: hover) {
+      span:hover::before,
+      span:focus::before {
+        transform: scaleX(1);
+      }
     }
 
     span {
@@ -55,10 +57,12 @@
       cursor: pointer;
     }
 
-    span:hover,
-    span:focus {
-      color: $secondaryColor;
-      border: 4px solid $primaryColor;
+    @media (hover: hover) {
+      span:hover,
+      span:focus {
+        color: $secondaryColor;
+        border: 4px solid $primaryColor;
+      }
     }
   }
 }
