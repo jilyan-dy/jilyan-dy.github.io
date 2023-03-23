@@ -8,6 +8,28 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: "Jilyan Dy",
+    menuLinks: [
+      {
+        name: "Home",
+        link: "/#intro",
+      },
+      {
+        name: "Projects",
+        link: "/#projects",
+      },
+      {
+        name: "Education",
+        link: "/#education",
+      },
+      {
+        name: "Publications",
+        link: "/#publications",
+      },
+      {
+        name: "Contact",
+        link: "/#contact",
+      },
+    ],
   },
 
   plugins: [
